@@ -9,8 +9,6 @@ This assumes the following
 5. I used CentOS 7
 6. You will be running the `openshift-install` command from this helpernode
 
-You can visit the [quickstart](quickstart.md) to...quickly start :)
-
 ## Prereqs
 
 Install a CentOS 7 or RHEl 7 server with this recommended setup:
