@@ -1,0 +1,28 @@
+---
+helper:
+  name: "bastion"
+  ipaddr: "10.75.30.211"
+dns:
+  domain: "os.fisc.lab"
+  clusterid: "test"
+  forwarder1: "12.127.16.68"
+  forwarder2: "12.127.16.67"
+bootstrap:
+  name: "bootstrap-0"
+  ipaddr: "10.75.30.212"
+  macaddr: "00:50:56:ad:e2:cc"
+masters:
+  - name: "control-plane-0"
+    ipaddr: "10.75.30.213"
+  - name: "control-plane-1"
+    ipaddr: "10.75.30.214"
+  - name: "control-plane-2"
+    ipaddr: "10.75.30.215"
+workers:
+  - name: "compute-0"
+    ipaddr: "10.75.30.216"
+  - name: "compute-1"
+    ipaddr: "10.75.30.217"
+  - name: "compute-2"
+    ipaddr: "10.75.30.218"
+

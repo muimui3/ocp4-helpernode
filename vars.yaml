@@ -1,0 +1,43 @@
+
+---
+disk: vda
+helper:
+  name: "bastion"
+  ipaddr: "10.75.30.211"
+dns:
+  domain: "os.fisc.lab"
+  clusterid: "test"
+  forwarder1: "12.127.16.68"
+  forwarder2: "12.127.16.67"
+dhcp:
+  router: "10.75.30.129"
+  bcast: "10.75.30.255"
+  netmask: "255.255.255.128"
+  poolstart: "10.75.30.212"
+  poolend: "10.75.30.223"
+  ipid: "10.75.30.128"
+  netmaskid: "255.255.255.128"
+bootstrap:
+  name: "bootstrap-0"
+  ipaddr: "10.75.30.212"
+  macaddr: "00:50:56:ad:e2:cc"
+masters:
+  - name: "control-plane-0"
+    ipaddr: "10.75.30.213"
+    macaddr: "00:50:56:ad:19:61"
+  - name: "control-plane-1"
+    ipaddr: "10.75.30.214"
+    macaddr: "00:50:56:ad:b2:80"
+  - name: "control-plane-2"
+    ipaddr: "10.75.30.215"
+    macaddr: "00:50:56:ad:17:00"
+workers:
+  - name: "compute-0"
+    ipaddr: "10.75.30.216"
+    macaddr: "ee:27:47:33:66:01"
+  - name: "compute-1"
+    ipaddr: "10.75.30.217"
+    macaddr: "09:01:08:13:55:ee"
+  - name: "compute-2"
+    ipaddr: "10.75.30.218"
+    macaddr: "bb:04:14:55:85:77"
